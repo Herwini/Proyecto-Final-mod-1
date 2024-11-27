@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página web básica diseñada como ejemplo con HTML semántico">
+  <title>Galaxia Radio</title>
+</head>
+
+<body>
+  <header>
+    <h1>Radio 369</h1>
+  </header>
+
+  <!-- Sección de contenido informativo -->
+  <main>
+    <section>
+      <h2>¿Quienes somos?</h2>
+      <p>Radio 369 es una estación de radio en línea especializada en música electrónica, más específicamente en el género House.
+      Su programación está diseñada para convertirse en tu compañero ideal durante las mañanas, ya que ofrece una mezcla de
+      diferentes artistas y estilos dentro del House, creando una atmósfera perfecta para comenzar el día con energía y buen
+      ánimo.</p>
+    </section>
+
+    <section>
+      <h2>Radio 369</h2>
+      <!-- Imagen con atributo alt para accesibilidad -->
+      <img src="imagenes/breakfast.png" alt="Desayuno continental" width="600">
+      <p>Haz clic en el siguiente enlace para visitar el sitio oficial:</p>
+      <a href="https://www.instagram.com/galaxia.369" target="_blank">Galaxia 369!</a>
+    </section>
+
+    <section>
+      <h2>¿Que esperas en Radio 369?</h2>
+      <ol>
+        <li>Musica gratuita a traves de tu pantalla de alta calidad.</li>
+        <li>Djs y productores .</li>
+        <li>Variedad de subgeneros.</li>
+        <li>Atmosfera energetica y positiva.</li>
+      </ol>
+      <h1>Talentos emergentes</h1>
+      <h3>¿Que necesitas para trabajar con nosotros?</h3>
+      <ul>
+        <li>Conocimiento del genero</li>
+        <li>Sentido del ritmo</li>
+        <li>Energia positiva</li>
+        <li>Mostraras tus mezclas aqui, asi que lucete!</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formulario de contacto</h2>
+      <p>Completa el siguiente formulario para contactarnos:</p>
+      <!-- Formulario básico -->
+      <form action="/submit" method="post">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" placeholder="Escribe tu correo" required><br><br>
+
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"
+          placeholder="Escribe tu mensaje aquí"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2024 Galaxia 369. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>
