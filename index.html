@@ -7,32 +7,79 @@
   <meta name="description" content="Página web básica diseñada como ejemplo con HTML semántico">
   <title>Galaxia Radio</title>
   <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
     <div class="contenedor-principal">
-      <div class="contenedor-izquierdo">Radio 369</div>
-        <div class="texto-galaxia369">
-          Haz clic en el siguiente enlace para visitar el sitio oficial:
-          <a class="link-galaxia369" href="https://www.instagram.com/galaxia.369" target="_blank">Galaxia 369!</a>
+      <div class="contenedor-izquierdo" style="cursor: pointer;">
+        <h1 style="background-color: transparent;">Radio.369</h1>
+      </div>
+
+      <div class="contenedor-search">
+        <div class="items-search">
+          <img src="img/search-icon.png" alt="search" width="40px" height="40px" style="background-color: transparent;">
         </div>
+        <div class="items-search">
+          <input type="text" id="search" name="search" placeholder="Busca artista, dj, evento" style="padding-left: 5px;">
+        </div>
+      </div>
+
+      <div class="contenedor-login">
+        <div class="items-login">
+          <p class="items-login" >Registrate o inicia sesion</p>
+        </div>
+        <div class="items-login">
+          <img src="img/avatar.png" alt="avatar" style="background-color: transparent;" width="40px" height="40px">
+        </div>
+      </div>
+
+      <div class="contenedor-derecho">
+        <p style="background-color: transparent;">Sitio Oficial</p>
+        <a class="link-galaxia369" href="https://www.instagram.com/galaxia.369" target="_blank" style="cursor: pointer; color: aliceblue;" >Galaxia.369</a>   
+      </div>
     </div>
+    
 
   <main>
-    <section>
-      <h2>¿Quienes somos?</h2>
-      <p class="quienes-somos">Radio 369 es una estación de radio en línea especializada en música electrónica, más específicamente en el género House. Su programación está diseñada para convertirse en tu compañero ideal durante las mañanas, ya que ofrece una mezcla de
-      diferentes artistas y estilos dentro del House, creando una atmósfera perfecta para comenzar el día con energía y buen
-      ánimo.</p>
-    </section>
+    <section class="video-image-evento-principal">
+      <div class="info-evento">
+        <h1 id="info-ubi1">Galaxy House</h1>
+        <h1 id="info-ubi2">Monterrey, Nuevo Leon</h1>
+        <h1 id="info-artists">Amii Watson B2B Jimmi Harvey</h1>
+        <div class="div-button">
+          <button id="info-button">
+          Ir al evento
+          </button>
+        </div>
+      </div>
 
-    <section>
-      <div class="imagen-coffe">
-        <img src="img/breakfast2.png" alt="desayuno1" width="600">
-        <img src="img/breakfast.png" alt="dj" width="600">
-        <img src="img/breakfast3.png" alt="desayuno2" width="600">
+      <div class="video-evento">
+        <video id="video" controls>
+          <source src="video/radio.369.video1.mp4" type="video/mp4">
+        </video>
       </div>
     </section>
+
+    <div class="radio-info-div-principal">
+      <div >
+        <h2>¿Quienes somos?</h2>
+      </div>
+      <div>
+        <h2>¿Que esperas en Radio.369?</h2>
+      </div>
+      <div>
+        <h2>Talentos emergentes</h2>
+      </div>
+    </div>
 
     <section>
       <h2>¿Que esperas en Radio 369?</h2>
