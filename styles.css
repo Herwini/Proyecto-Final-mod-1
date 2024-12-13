@@ -3,6 +3,14 @@
   box-sizing: border-box;
   background-color: transparent;
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body
+{
+  font-family: sans-serif;
+  text-transform: capitalize;
 }
 
 h2
@@ -30,6 +38,7 @@ img
   display: flex;
   align-items: center;
   position: sticky;
+  z-index: 1000;
   top: 0;
   border-bottom: 1px solid black;
   justify-content: space-around;
@@ -256,3 +265,53 @@ input::placeholder
   border: 2px solid black;
 }
 
+.footer-principal
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  padding-bottom: 80px;
+  background-color: gainsboro;
+}
+
+.footer-container-info
+{
+  width: 2000px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+
+.footer-links 
+{
+  padding-top: 40px;
+}
+
+.footer-links h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  border-bottom: 5px solid black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-links h5
+{
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.footer-links p
+{
+  font-size: 18px;
+  width: 200px;
+}
+
+.footer-links ul li a 
+{
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  padding-top: 15px;
+  display: block;
+}
