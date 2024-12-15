@@ -33,32 +33,31 @@ img
   background-color: transparent;
 }
 
-.contenedor-principal
-{
-  display: flex;
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   position: sticky;
   z-index: 1000;
   top: 0;
   border-bottom: 1px solid black;
-  justify-content: space-around;
   font-family: "Poppins", Arial, sans-serif;
   background-image: linear-gradient(to right, #4e4481, #1c5789);
-  color: white
+  color: white;
+  padding: 10px 20px;
 }
 
 .contenedor-izquierdo
 { 
+  grid-column: 1 / 2;
   font-size: 30px;
-  background-color: transparent;
 }
 
 .contenedor-search
 {
-  background-color: transparent;
+  grid-column: 2 / 3;
   display: flex;
-  font-family: "Poppins", Arial, sans-serif;
-
+  justify-content: center;
 }
 
 .items-search
@@ -85,10 +84,9 @@ input::placeholder
 
 .contenedor-login
 { 
+  grid-column: 3 / 4;
   display: flex;
-  background-color: transparent;
-  font-size: 20px;
-  padding-top: 18px;
+  justify-content: flex-end;
 }
 
 .items-login
@@ -101,6 +99,7 @@ input::placeholder
 {
   font-size: 20px;
   background-color: transparent;
+  padding-left: 90px;
 }
 
 .link-galaxia369
